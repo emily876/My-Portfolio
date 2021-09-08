@@ -1,0 +1,11 @@
+.footerstyle{
+    height: 80px;
+    background-color: black;
+    padding-top: 8px;
+}
+
+.footerstyle p{
+    color: white;
+    line-height: 4px;
+    padding-top: 5px;
+}

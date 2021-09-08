@@ -1,0 +1,23 @@
+.contact{
+    background-color: #F5FDB0;
+}
+
+.contact .say{
+    color:#FFC107;
+}
+
+.divider5{
+    fill:var(--lightdivider5);
+}
+
+.dark .divider5{
+--lightdivider5:#413C69;
+}
+
+.dark .contact{
+    background-color: #6F4C5B;
+}
+
+.dark .contact .say{
+    color:#B97A95;
+}

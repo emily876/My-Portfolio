@@ -1,0 +1,44 @@
+.changecolor{
+    background-color: var(--backgroundhobby);
+}
+
+.hobby h1{
+    color:#986D8E;
+    font-weight: 500;
+}
+
+.hobby p{
+    font-weight: 500;
+    color:#A12568;
+    text-shadow: black;
+    font-family:cursive;
+}
+
+.letters{
+    color:#6F69AC;
+}
+
+.dark .letters{
+    color:#54436B;
+}
+
+.divider3{
+    fill:var(--lightdivider3);
+  }
+  
+.dark .divider3{
+    --lightdivider3:#3B185F;
+}
+
+.dark .changecolor{
+    --backgroundhobby: #345B63;
+}
+
+.dark .hobby h1{
+    color:#9DDAC6;
+    
+}
+
+.dark .hobby p{
+    color:white;
+}

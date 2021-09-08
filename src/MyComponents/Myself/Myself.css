@@ -1,0 +1,100 @@
+.backgrd{
+    background-color:#ececec;
+}
+
+.backgrd img{
+    margin-top: 120px;
+    margin-bottom:30px;
+}
+
+.backgrd .hi{
+    font-size: 25px;
+    font-weight: bold;
+    color:#800080;
+}
+
+.backgrd .me{
+    color:orangered;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top:-10px ;
+}
+
+.backgrd .web{
+    color:rgb(91, 91, 241);
+    font-size: 60px;
+    margin-top: 5px ;
+}
+
+.backgrd p{
+    line-height: 60px;
+    font-weight: bold;
+    font-family:'Zilla Slab', serif;
+}
+
+.backgrd button{
+    margin-top:20px;
+    margin-bottom: 74px;
+    font-family:'Zilla Slab', serif;
+}
+
+.backgrd a{
+    text-decoration: none;
+	transition: all .5s linear;
+}
+
+/* image edit */
+
+.myimage img{
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    object-position:top;
+    border-radius: 50%;
+	transition: all 2s linear;
+	box-shadow: 0 0 0 0 rgb(0, 0, 0);
+	transform: scale(1);
+	animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 var(--dark-black);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 var(--len) var(--light-black);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 var(--light-black);
+	}
+}
+
+/* DARK MODE  */
+.dark .hi {
+    color: #FF6700;
+}
+.dark .me {
+    color: #B026FF;
+}
+.dark .web {
+  color: var(--lighter);
+}
+
+.dark #myself{
+  color: #4dfa6c;
+}
+
+.dark .myimage{
+    --dark-black: #4dfa6c;
+    --light-black: #a7ebb5;
+    --len:5px;
+}
+
+.dark .backgrd {
+    background-color:rgb(39, 36, 36);
+}
