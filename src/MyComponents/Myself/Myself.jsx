@@ -1,6 +1,9 @@
 import React from 'react';
 import './Myself.css';
 import Particles from 'react-particles-js';
+import {Button} from '@material-ui/core';
+
+import pdf from "./My_resume.pdf";
 
 export const Myself = () => {
 	
@@ -52,6 +55,7 @@ export const Myself = () => {
            <p className="hi">Hi ! Myself,</p>
            <p className="me">Devsi Singh</p>
            <p className="web"> &#60; Web Developer &#62;</p>
+		   <a  href={pdf} target="_blank"><Button variant="contained" style={{color:'white', background:'#9B72AA'}}>&nbsp;&nbsp;&nbsp;See My Resume&nbsp;&nbsp;</Button></a>
       </div>
 
     </div>
