@@ -16,15 +16,20 @@ const useStyle = makeStyles(theme =>({
     },
     menuButton:{
         display:'none',
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('1000')]:{
             display:'block',
-            // marginLeft:400
         }
     },
     headerButtons:{
-        margin: '0 0% 0 auto',
-        [theme.breakpoints.down('sm')]:{
+        margin: '0 0 0 65%',
+        [theme.breakpoints.down('1000')]:{
             display:'none'
+        },
+        [theme.breakpoints.between('1150','1300')]:{
+            margin: '0 0 0 50%',
+        },
+        [theme.breakpoints.between('900','1150')]:{
+            margin: '0 0 0 45%',
         }
     }
 }));

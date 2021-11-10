@@ -11,12 +11,13 @@ import {Footer} from "./MyComponents/Footer/Footer";
 import { makeStyles } from '@material-ui/core';
 import {useState} from 'react';
 
-const useStyle=makeStyles({
+const useStyle=makeStyles(theme =>({
   toggle:{
     marginTop:50, 
-    marginLeft:-1500
-  }
-})
+    marginLeft:'-95%',
+  },
+  
+}));
 
 function App() {
 

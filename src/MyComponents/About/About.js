@@ -5,21 +5,59 @@ import Typed from "react-typed";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(theme=>({
     combine:{
-        display:'flex'
+        display:'flex',
+        [theme.breakpoints.down('600')]:{
+          display:'block',
+      }
     },
     heading:{
       fontSize:50,
       marginTop:-80,
-      color:'#E28F83'
+      color:'#E28F83',
+      [theme.breakpoints.between('200','1000')]:{
+        marginTop:-40,
+    }
     },
     sidemove:{
       marginTop:30,
       padding:30,
-      marginLeft:20
-    }
-});
+      marginLeft:20,
+      [theme.breakpoints.between('800','1000')]:{
+        marginTop:0,
+        padding:10,
+      },
+      [theme.breakpoints.between('200','800')]:{
+        marginTop:20,
+        padding:10,
+      },
+    },
+    pic:{
+      [theme.breakpoints.between('900','1000')]:{
+        marginTop:30,
+        width:450
+      },
+      [theme.breakpoints.between('800','900')]:{
+        marginTop:50,
+        width:400
+      },
+      [theme.breakpoints.between('700','800')]:{
+        marginTop:70,
+        width:350
+      },
+      [theme.breakpoints.between('600','700')]:{
+        marginTop:120,
+        width:300
+      },
+      [theme.breakpoints.between('400','600')]:{
+        width:400
+      },
+      [theme.breakpoints.between('200','400')]:{
+        width:300
+      },
+    },
+}));
 
 export const About = () => {
     
@@ -43,7 +81,7 @@ export const About = () => {
 
             <Box className={classes.combine}>
                     <Box data-aos="fade-right">
-                        <img src={process.env.PUBLIC_URL + '/images/programmer.jpg'} alt="hi" />
+                        <img className={classes.pic} src={process.env.PUBLIC_URL + '/images/programmer.jpg'} alt="hi" />
                     </Box>
 
                     <Box className={classes.sidemove}>

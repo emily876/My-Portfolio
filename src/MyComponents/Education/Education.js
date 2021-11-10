@@ -5,25 +5,56 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {Box, Card,makeStyles, CardActionArea,CardMedia,CardContent,Typography } from '@material-ui/core'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme=>({
     root: {
       maxWidth: 345,
       marginTop:150,
-      marginBottom:150
+      marginBottom:150,
+      [theme.breakpoints.between('1000','1100')]:{
+        marginTop:200,
+        marginBottom:350,
+      },
+      [theme.breakpoints.between('920','1000')]:{
+        marginTop:100,
+      },
+      [theme.breakpoints.down('920')]:{
+        display:'none'
+      },
     },
     media: {
       height: 140,
     },
     arrange:{
         display:'flex',
-        position:'relative'
+        position:'relative',
+        [theme.breakpoints.down('1000')]:{
+          display:'block',
+        },
     },
     second:{
         minWidth: 300,
         maxHeight:350,
         position:'absolute',
       top:250,
-      left:620
+      left:620,
+      [theme.breakpoints.between('1100','1300')]:{
+        minWidth: 250,
+        maxHeight:300,
+        top:250,
+        left:550,
+      },
+      [theme.breakpoints.between('1000','1100')]:{
+        minWidth: 250,
+        maxHeight:300,
+        top:350,
+        left:500,
+      },
+      [theme.breakpoints.between('920','1000')]:{
+        top:150,
+      },
+      [theme.breakpoints.down('920')]:{
+        display:'none'
+      },
     },
     third:{
       position: '20px 30px',
@@ -31,14 +62,50 @@ const useStyles = makeStyles({
       maxHeight:350,
       position:'absolute',
       top:30,
-      left:330
+      left:330,
+      [theme.breakpoints.between('1100','1300')]:{
+        minWidth: 250,
+        maxHeight:300,
+        top:30,
+        left:330,
+      },
+      [theme.breakpoints.between('1000','1100')]:{
+        minWidth: 250,
+        maxHeight:300,
+        top:100,
+        left:300,
+      },
+      [theme.breakpoints.between('920','1000')]:{
+        top:-100
+      },
+      [theme.breakpoints.down('920')]:{
+        display:'none'
+      },
   },
   fourth:{
     minWidth: 300,
     maxHeight:350,
     position:'absolute',
       top:420,
-      left:330
+      left:330,
+      [theme.breakpoints.between('1100','1300')]:{
+        minWidth: 250,
+        maxHeight:300,
+          top:420,
+          left:330,
+      },
+      [theme.breakpoints.between('1000','1100')]:{
+        minWidth: 250,
+        maxHeight:300,
+          top:500,
+          left:330,
+      },
+      [theme.breakpoints.between('920','1000')]:{
+        top:300,
+      },
+      [theme.breakpoints.down('920')]:{
+        display:'none'
+      },
 },
     codingMedia:{
         height: 200,
@@ -48,9 +115,35 @@ const useStyles = makeStyles({
   },
   playMedia:{
     height: 200,
+  },
+  headedu:{
+    marginLeft:650,
+    paddingTop:80,
+    [theme.breakpoints.between('1100','1300')]:{
+      marginLeft:480,
+    },
+    [theme.breakpoints.between('1000','1100')]:{
+      marginLeft:400,
+    },
+    [theme.breakpoints.down('1000')]:{
+      marginLeft:0,
+      paddingTop:0,
+    },
+  },
+  paraedu:{
+    marginLeft:650,
+    [theme.breakpoints.between('1100','1300')]:{
+      marginLeft:480,
+    },
+    [theme.breakpoints.between('1000','1100')]:{
+      marginLeft:400,
+    },
+    [theme.breakpoints.down('1000')]:{
+      marginLeft:0,
+    },
   }
 
-  });
+  }));
 
 export const Education = () => {
     useEffect(() => {
@@ -151,8 +244,8 @@ export const Education = () => {
 </Card>
 <span>
   <Typography className="hobby">
-    <h1 data-aos="fade-left" style={{marginLeft:650,paddingTop:80,fontSize:40}}>Education and Hobbies</h1>
-    <div style={{marginLeft:600,marginTop:50}}>
+    <h1 data-aos="fade-left" style={{fontSize:40}} className={classes.headedu}>Education and Hobbies</h1>
+    <div style={{marginTop:50}} className={classes.paraedu}>
     <p>Hii There. I'm a pre-final year student</p><p> and  will be graduating in 2023. </p><p> Telling you about my experiences till now , 
     </p><p>I've done an internship in web development </p><p> and currently contributing to open source programs. </p><p> I have been interested 
       in coding from my <br></br> senior secondary, and </p><p> I wanted to folllow it as a passion. </p><p>In my leisure time, I try </p><p> to grasp new 

@@ -10,7 +10,7 @@ const useStyle = makeStyles(theme=>({
             alignItems:'center',
             textDecoration:'none',
             color:'#fff',
-            [theme.breakpoints.down('sm')]:{
+            [theme.breakpoints.down('1000')]:{
                 color:'#2874f0',
                 alignItems:'center',
                 display:'flex',
@@ -18,7 +18,7 @@ const useStyle = makeStyles(theme=>({
                 marginTop:10
             }
         },
-        [theme.breakpoints.down('sm')]:{
+        [theme.breakpoints.down('1000')]:{
             display:'block'
         }
     }

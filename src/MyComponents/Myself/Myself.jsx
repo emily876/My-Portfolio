@@ -46,7 +46,7 @@ export const Myself = () => {
             height: "100%"
           }}
         >
-			<div>
+	       <div>
            <div className="myimage">
            <img src={process.env.PUBLIC_URL + '/images/devsi.jpg'}/>
            </div>
@@ -55,9 +55,8 @@ export const Myself = () => {
            <p className="hi">Hi ! Myself,</p>
            <p className="me">Devsi Singh</p>
            <p className="web"> &#60; Web Developer &#62;</p>
-		   <a  href={pdf} target="_blank"><Button variant="contained" style={{color:'white', background:'#9B72AA'}}>&nbsp;&nbsp;&nbsp;See My Resume&nbsp;&nbsp;</Button></a>
+		   <a href={pdf} target="_blank"><Button variant="contained" style={{color:'white', background:'#9B72AA'}}>&nbsp;&nbsp;&nbsp;See My Resume&nbsp;&nbsp;</Button></a>
       </div>
-
     </div>
     )
 }

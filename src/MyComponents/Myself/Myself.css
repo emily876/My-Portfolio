@@ -10,7 +10,7 @@
 .backgrd .hi{
     font-size: 25px;
     font-weight: bold;
-    color:#800080;
+    color:#800080;   
 }
 
 .backgrd .me{
@@ -97,4 +97,237 @@
 
 .dark .backgrd {
     background-color:rgb(39, 36, 36);
+}
+
+
+@media screen and (max-width: 1150px) and (min-width: 900px)  {
+    .myimage img{
+        height:180px;
+        width:180px;
+    }
+    .backgrd img {
+        margin-top: 100px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 38px;
+    }
+    .backgrd .me{
+        font-size: 40px;
+    }
+    .backgrd .web{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 800px)  {
+    .myimage img{
+        height:180px;
+        width:180px;
+    }
+    .backgrd img {
+        margin-top: 80px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 35px;
+    }
+    .backgrd .me{
+        font-size: 40px;
+    }
+    .backgrd .web{
+        font-size: 55px;
+    }
+    .backgrd button{
+        margin-top:8px;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 730px)  {
+    .myimage img{
+        height:160px;
+        width:160px;
+    }
+    .backgrd img {
+        margin-top: 80px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 30px;
+    }
+    .backgrd .me{
+        font-size: 35px;
+    }
+    .backgrd .web{
+        font-size: 40px;
+    }
+    .backgrd button{
+        margin-top:8px;
+    }
+}
+@media screen and (max-width: 730px) and (min-width: 700px)  {
+    .myimage img{
+        height:160px;
+        width:160px;
+    }
+    .backgrd img {
+        margin-top: 80px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 30px;
+    }
+    .backgrd .me{
+        font-size: 30px;
+    }
+    .backgrd .web{
+        font-size: 35px;
+    }
+    .backgrd button{
+        margin-top:-2px;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 600px)  {
+    .myimage img{
+        height:130px;
+        width:130px;
+    }
+    .backgrd img {
+        margin-top: 70px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 30px;
+    }
+    .backgrd .me{
+        font-size: 30px;
+    }
+    .backgrd .web{
+        font-size: 35px;
+        margin-top: -8px ;
+    }
+    .backgrd button{
+        margin-top:-2px;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 530px)  {
+    .myimage img{
+        height:120px;
+        width:120px;
+    }
+    .backgrd img {
+        margin-top: 65px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 23px;
+    }
+    .backgrd .me{
+        font-size: 28px;
+    }
+    .backgrd .web{
+        font-size: 30px;
+        margin-top: -8px ;
+    }
+    .backgrd button{
+        margin-top:-5px;
+    }
+}
+@media screen and (max-width: 530px) and (min-width: 490px)  {
+    .myimage img{
+        height:120px;
+        width:120px;
+    }
+    .backgrd img {
+        margin-top: 70px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 25px;
+    }
+    .backgrd .me{
+        font-size: 28px;
+    }
+    .backgrd .web{
+        visibility: hidden;
+    }
+    .backgrd button{
+        margin-top:-50px;
+    }
+}
+@media screen and (max-width: 490px) and (min-width: 430px)  {
+    .myimage img{
+        height:150px;
+        width:150px;
+    }
+    .backgrd img {
+        margin-top: 70px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 25px;
+    }
+    .backgrd .hi{
+        visibility: hidden;  
+    }
+    
+    .backgrd .me{
+        visibility: hidden;
+    }
+    .backgrd .web{
+        visibility: hidden;
+    }
+    .backgrd button{
+        margin-top:-180px;
+    }
+}
+@media screen and (max-width: 430px) and (min-width: 370px)  {
+    .myimage img{
+        height:120px;
+        width:120px;
+    }
+    .backgrd img {
+        margin-top: 70px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 25px;
+    }
+    .backgrd .hi{
+        visibility: hidden;  
+    }
+    
+    .backgrd .me{
+        visibility: hidden;
+    }
+    .backgrd .web{
+        visibility: hidden;
+    }
+    .backgrd button{
+        margin-top:-180px;
+    }
+}
+@media screen and (max-width: 370px) and (min-width: 200px)  {
+    .myimage img{
+        height:100px;
+        width:100px;
+    }
+    .backgrd img {
+        margin-top: 70px;
+        margin-bottom:5px;
+    }
+    .backgrd p{
+        line-height: 25px;
+    }
+    .backgrd .hi{
+        visibility: hidden;  
+    }
+    
+    .backgrd .me{
+        visibility: hidden;
+    }
+    .backgrd .web{
+        visibility: hidden;
+    }
+    .backgrd button{
+        margin-top:-180px;
+    }
 }

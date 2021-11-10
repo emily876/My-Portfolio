@@ -4,7 +4,6 @@
 }
 
 .about .fa {
-    /* color:teal; */
     color:coral;
     padding: 40px;
     font-size: 32px;
@@ -23,7 +22,7 @@
   color:#FF7F50;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -36,7 +35,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   background: rgb(39, 36, 36);
-}
+} */
 .wrapper{
   display: flex;
 }
@@ -114,3 +113,17 @@ color: #FCDEC0;
 .dark .header{
   color:#FCDEC0
 }
+
+
+/* @media screen and (max-width: 600px) and (min-width: 200px)  {
+  .about .fa-github {
+    margin-left: 10px;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 100px;
+    height: 90px;
+  }
+  .text-slider{
+    margin-left:200px;
+  }
+} */

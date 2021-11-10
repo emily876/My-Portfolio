@@ -39,7 +39,7 @@ const Mailer = () => {
     <div
       className="containerform"
       style={{
-        marginLeft:300,
+        margin:"0 auto",
         width: "60%",
         height:500,
         backgroundImage: `url('https://img.freepik.com/free-photo/contact-icons-keyboard-button-online-contact-concept_2227-1391.jpg?size=626&ext=jpg')`,
