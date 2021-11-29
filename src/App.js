@@ -41,7 +41,7 @@ const classes = useStyle();
       <Myself />
       <About />
       <Skillset />
-      <Education />
+      {/* <Education /> */}
       <Projects />
       <Mailer />
       <Footer />

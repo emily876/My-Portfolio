@@ -13,7 +13,11 @@ export const Myself = () => {
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 100
+	            "value": 100,
+				"density": {
+					"enable": true,
+					"value_area": 700
+				}
 	        },
 	        "size": {
 	            "value": 2

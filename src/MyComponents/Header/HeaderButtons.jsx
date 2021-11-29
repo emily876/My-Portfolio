@@ -32,7 +32,7 @@ const HeaderButtons = () => {
             <a href="#myself"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Myself</Typography></a>
             <a href="#about"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>About</Typography></a>
             <a href="#skillset"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Skillset</Typography></a>
-            <a href="#eduhobby"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Education</Typography></a>
+            {/* <a href="#eduhobby"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Education</Typography></a> */}
             <a href="#projects"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Projects</Typography></a>
             <a href="#contactsay"><Typography style={{marginTop:5 ,cursor:'pointer',color:'#1089FF',fontWeight:600}}>Contact</Typography></a>
         </Box>

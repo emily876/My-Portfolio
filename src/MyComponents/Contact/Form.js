@@ -34,7 +34,7 @@ const Mailer = () => {
           </svg>
        </div>
 
-       <p className="say" style={{fontSize:50,fontWeight:500,marginTop:-70}}>Say Hi !</p>
+       <p className="say" style={{fontSize:50,fontWeight:500,marginTop:-30}}>Say Hi !</p>
 
     <div
       className="containerform"
@@ -50,7 +50,7 @@ const Mailer = () => {
 
       <form
         className="row"
-        style={{ margin: "0 100px 0 100px" ,padding:60, color:'#39A9CB',fontSize:16,lineHeight:2,fontWeight:600}}
+        style={{paddingTop:10,paddingLeft:60,paddingRight:60, color:'#39A9CB',fontSize:16,lineHeight:2,fontWeight:600}}
         onSubmit={sendEmail}
       >
         <label>Your Name here</label>
@@ -65,7 +65,7 @@ const Mailer = () => {
           type="submit"
           value="Send"
           className="form-control btn btn-primary"
-          style={{ marginTop: "30px" }}
+          style={{ marginTop: "30px"}}
         />
       </form>
     </div>
